@@ -1,25 +1,27 @@
 <?php
 session_start();
-
 require_once __DIR__.'/../config.php';
-require_once __DIR__.'/../app/core/Router.php';
-require_once __DIR__.'/../app/core/App.php';
+// require_once __DIR__.'/../app/core/Router.php';
+// require_once __DIR__.'/../app/core/App.php';
 
 // Autoloader simple pour les classes
 spl_autoload_register(function ($class) {
+    $class = str_replace('App\\', '', $class); // on retire le préfixe App\
     $file = __DIR__.'/../app/'.str_replace('\\', '/', $class).'.php';
     if (file_exists($file)) {
         require $file;
     }
 });
 
+
 // Initialiser l'application
-$app = new App();
+// $app = App\core\App::getInstance();
 
 // Routes
-$router = $app->router;
+$router = App\core\Router::getInstance();
 
-// Routes publiques
+
+// // Routes publiques
 $router->get('/', 'PublicController@index');
 $router->get('/search', 'PublicController@search');
 $router->get('/contact-donor/{id}', 'PublicController@contactDonor');

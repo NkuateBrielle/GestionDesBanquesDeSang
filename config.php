@@ -7,5 +7,5 @@ define('DB_NAME', 'blood_donation');
 
 // Configuration de l'application
 define('APP_ROOT', dirname(dirname(__FILE__)));
-define('URL_ROOT', 'http://localhost/blood-donation');
+define('URL_ROOT', 'http://localhost/GestionDesBanquesDeSang/');
 define('SITE_NAME', 'SangPourTous');

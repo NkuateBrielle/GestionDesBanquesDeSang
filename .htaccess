@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /blood-donation/
+    RewriteBase /GestionDesBanquesDeSang/
     
     # Redirect to public folder
     RewriteRule ^$ public/ [L]
