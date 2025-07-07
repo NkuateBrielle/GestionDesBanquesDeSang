@@ -1,0 +1,47 @@
+@media (max-width: 992px) {
+    .sidebar {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .dashboard-card .display-4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 1.5rem;
+    }
+    
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .btn-group-sm .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1.5rem !important;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .list-group-item {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .blood-type-badge {
+        font-size: 0.65em;
+        padding: 0.3em 0.6em;
+    }
+}

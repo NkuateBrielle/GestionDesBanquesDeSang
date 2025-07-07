@@ -1,84 +1,82 @@
 :root {
-    --primary-color: #8B0000;
-    --secondary-color: #333;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --cream-color: #f5f5f5;
+    --blood-red: #8B0000;
+    --dark-red: #6B0000;
+    --light-red: #A52A2A;
+    --off-white: #F5F5F5;
+    --dark-gray: #333;
+    --medium-gray: #666;
+    --light-gray: #EEE;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-gray);
     line-height: 1.6;
-    color: var(--secondary-color);
-    background-color: var(--cream-color);
 }
 
-.navbar {
-    background-color: var(--primary-color);
+.bg-blood-red {
+    background-color: var(--blood-red);
+}
+.c-blood-red * {
+    color: var(--blood-red);
 }
 
-.navbar-brand {
-    font-weight: bold;
-    color: white !important;
+.text-blood-red {
+    color: var(--blood-red);
 }
 
-.nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.nav-link:hover {
-    color: white !important;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-primary:hover {
-    background-color: #6d0000;
-    border-color: #6d0000;
-}
-
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+.btn-blood-red {
+    background-color: var(--blood-red);
     color: white;
-    padding: 100px 0;
-    text-align: center;
+    border: none;
 }
 
-.blood-card {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.btn-blood-red:hover {
+    background-color: var(--dark-red);
+    color: white;
 }
 
-.blood-card:hover {
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.blood-type {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--primary-color);
+.alert {
+    border-radius: 8px;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: var(--dark-color);
+.blood-type-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: var(--blood-red);
     color: white;
-    padding: 20px 0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .hero {
-        padding: 60px 0;
+    #map {
+        height: 300px;
     }
 }
