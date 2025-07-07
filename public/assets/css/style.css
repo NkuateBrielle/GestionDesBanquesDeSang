@@ -1,0 +1,82 @@
+:root {
+    --blood-red: #8B0000;
+    --dark-red: #6B0000;
+    --light-red: #A52A2A;
+    --off-white: #F5F5F5;
+    --dark-gray: #333;
+    --medium-gray: #666;
+    --light-gray: #EEE;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.bg-blood-red {
+    background-color: var(--blood-red);
+}
+.c-blood-red * {
+    color: var(--blood-red);
+}
+
+.text-blood-red {
+    color: var(--blood-red);
+}
+
+.btn-blood-red {
+    background-color: var(--blood-red);
+    color: white;
+    border: none;
+}
+
+.btn-blood-red:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+    border-radius: 8px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blood-type-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: var(--blood-red);
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}

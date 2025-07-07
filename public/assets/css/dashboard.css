@@ -1,0 +1,71 @@
+.dashboard-card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card .card-body {
+    padding: 1.5rem;
+}
+
+.dashboard-card .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.sidebar {
+    min-height: calc(100vh - 56px);
+    background: #343a40;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: white;
+    background: var(--blood-red);
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
